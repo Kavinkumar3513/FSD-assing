@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="" href="">
+    <style>
+        *{
+        text-align: center;
+    
+}
+body{
+    color: rgb(17, 81, 230);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: large;
+   
+    background-image: url("https://img.freepik.com/free-photo/vintage-clock_74190-5728.jpg");
+    background-size: cover;
+background-repeat: no-repeat;
+}
+button{
+width: 90px;
+height: 30px;
+border-radius:10px;
+background-color: rgb(35, 246, 109);
+color: rgb(32, 7, 7);
+font-family: 'Times New Roman', Times, serif;
+font-style: inherit;
+font-size: 100%;
+
+}
+    </style>
+    <script>
+        let myVar=setInterval(myTimer,5000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("clocl").innerHTML =d=myTimer();
+}
+    </script>
+</head>
+<body>
+    <h2>Digital Clock</h2>
+
+<p>Clock using Start and Stop Function</p>
+<button onclick="myVar=setInterval(myTimer,1000)">START</button>
+<button onclick="clearInterval(myVar)">STOP</button>
+
+<p id="clock"></p>
+
+
+</script>
+</body>
+</html>
